@@ -1,6 +1,7 @@
 body{
     background-color:#68cdd5;
-
+    margin: 0;
+    padding:0;
 }
 .box1{
     text-align: center;
@@ -22,5 +23,3 @@ body{
     float:right;
     color: white;
 }
-
-
