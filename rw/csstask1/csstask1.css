@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+
+.box {
+    width: 30%;
+    high:30%;
+    padding-top: 30%;
+    background-color: orange;
+    float: left;
+    margin: 1%;
+    border-radius: 30px;
+
+}
