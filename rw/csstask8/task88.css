@@ -17,6 +17,8 @@ body {
     padding-right: 20px;
     color: #29b078;
     font-size: 18px;
+    height: 50px;
+    line-height: 50px;
 }
 @media screen and (max-width: 960px){
     .container-a{
@@ -44,14 +46,25 @@ body {
 .nav-link {
     color: #fff!important;
     padding: 20px;
+    border-bottom: 2px solid #29b078;
 }
-.nav-link:hover {
+li .nav-link:hover {
     border-bottom: 2px solid #fff;
 }
 button:focus {
     outline: none;
 }
 /* 导航栏部分 */
+.col-f a {
+    text-decoration:none;
+    color:#212529;
+}
+.text {
+    cursor: pointer;
+}
+.text:hover {
+    background-color: #29b078;
+}
 .row-a {
     line-height: 50px;
     border-bottom: 1px solid #d0d6d9;
@@ -77,6 +90,7 @@ button:focus {
     grid-column-end: 6;
     background-image: url(img/t.png);
     background-repeat: no-repeat;
+    margin: 10px 0 0 10px;
 }
 .item-b {
     grid-column-start: 6;
@@ -300,4 +314,10 @@ button:focus {
 }
 .footer-a {
     margin-top: 40px;
+}
+.we:hover{
+    text-decoration:underline;
+}
+.skill:hover{
+    text-decoration:underline;
 }

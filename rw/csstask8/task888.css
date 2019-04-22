@@ -17,6 +17,8 @@ body {
     padding-right: 20px;
     color: #29b078;
     font-size: 18px;
+    height: 50px;
+    line-height: 50px;
 }
 @media screen and (max-width: 960px){
     .container-a{
@@ -44,8 +46,9 @@ body {
 .nav-link {
     color: #fff!important;
     padding: 20px;
+    border-bottom: 2px solid #29b078;
 }
-.nav-link:hover {
+li .nav-link:hover {
     border-bottom: 2px solid #fff;
 }
 button:focus {
@@ -85,8 +88,14 @@ button:focus {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    border: 1px solid red;
+    border: 1px solid #ff7628;
     margin:5px;
+}
+.col-a ul li:hover .row-text{
+    background-color:#ff7628 ;
+}
+.col-a ul li:hover{
+    color:#ff7628 ;
 }
 .col-a ul{
     padding: 0;
@@ -99,9 +108,13 @@ button:focus {
     padding-top: 20px;
     color: #74c5a0;
 }
+
 /* main左边部分 */
 .col-b {
     background-color: #fff;
+}
+.col-b img {
+    margin-left: 20px;
 }
 .col-c{
     border-left: 1px solid #e6e6e6;
@@ -204,4 +217,10 @@ li:hover .main-left{
 }
 .footer-a {
     margin-top: 40px;
+}
+.we:hover{
+    text-decoration:underline;
+}
+.skill:hover{
+    text-decoration:underline;
 }
