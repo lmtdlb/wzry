@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定制箱</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="task10.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <span class="service">客服热线：010-594-78634</span>
+            </div>
+            <div class="col right">
+                <span class="landing">登陆</span>
+                <span class="register">注册</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 头部分-->
+    <div class="background-a">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light padding">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="#"><span>首页</span></a>
+                            <a class="nav-item nav-link" href="#"><span>在线定制</span></a>
+                            <a class="nav-item nav-link" href="#"><span>标准箱</span></a>
+                            <a class="nav-item nav-link quality" href="#"><span>品质保障</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </div>
+        <!-- 导航栏 -->
+            <div class="container">
+        <div class="row">
+            <div class="col col-top">
+            <div class="d-flex justify-content-end flex-wrap">
+                <div class="box-wrap">
+                <div class="box">
+                    <div class="rectangle"></div>
+                    <div class="circle">1</div>
+                    <div class="rectangle"></div>
+                </div><br>
+                <p>1.定制纸箱</p>
+                </div>
+
+                <div class="box-wrap">
+                <div class="box">
+                    <div class="rectangle"></div>
+                    <div class="circle">2</div>
+                    <div class="rectangle"></div>
+                </div><br>
+                    <p>2.选择数量</p>
+                </div>
+
+                <div class="box-wrap">
+                    <div class="box">
+                        <div class="rectangle"></div>
+                        <div class="circle">3</div>
+                        <div class="rectangle"></div>
+                    </div><br>
+                    <p>3.上传附件</p>
+                </div>
+
+                <div class="box-wrap">
+                    <div class="box">
+                        <div class="rectangle"></div>
+                        <div class="circle">4</div>
+                        <div class="rectangle"></div>
+                    </div><br>
+                    <p>4.确认下单</p>
+                </div>
+            </div>
+        </div>
+        </div>
+                <div class="row">
+                    <div class="col">
+                        <h5>请您按照以下步骤来定制您的纸箱</h5>
+                    </div>
+                </div>
+    </div>
+    <!-- 确认下单部分 -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col col-img">
+                    <img src="img/a.png">
+                    <span>选择箱型</span>
+                </div>
+            </div>
+            <div class="row row-col">
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-a" name="sex" />
+                        <label for="female-a">对口箱</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-b" name="sex" />
+                        <label for="female-b">飞机盒</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-c" name="sex" />
+                        <label for="female-c">天地盖</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2 ml-auto">
+                    <div class="select">
+                        <select>
+                            <option value="volvo">查看详情</option>
+                            <option value="saab">不知火舞</option>
+                            <option value="mercedes">不知好歹</option>
+                            <option value="audi">不知死活</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 选择箱型部分 -->
+        <div class="container">
+            <div class="row">
+                <div class="col col-img">
+                    <img src="img/b.png">
+                    <span>确认尺寸</span>
+                </div>
+            </div>
+            <div class="row row-col-a">
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-d" name="sex" />
+                        <label for="female-d">外径</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female d-flex justify-content-center">
+                        <span>长</span>
+                        <input maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female d-flex justify-content-center">
+                        <span>宽</span>
+                        <input maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female d-flex justify-content-center">
+                        <span>高</span>
+                        <input maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span>mm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-col-a">
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-e" name="sex" />
+                        <label for="female-e">内径</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female d-flex justify-content-center">
+                        <span>长</span>
+                        <input maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female d-flex justify-content-center">
+                        <span>宽</span>
+                        <input maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female d-flex justify-content-center">
+                        <span>高</span>
+                        <input maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text">
+                        <span>mm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row  row-col-a">
+                <div class="col-md-12 col-lg-2 ml-auto col-b">
+                    <div class="select">
+                        <select>
+                            <option value="volvo">查看详情</option>
+                            <option value="saab">不知火舞</option>
+                            <option value="mercedes">不知好歹</option>
+                            <option value="audi">不知死活</option>
+                        </select>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <!-- 确认尺寸部分 -->
+        <div class="container">
+            <div class="row">
+                <div class="col col-img">
+                    <img src="img/c.png">
+                    <span>选择材质</span>
+                </div>
+            </div>
+            <div class="row row-col row-col-b">
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-f" name="sex" />
+                        <label for="female-f">三层A瓦优质</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-g" name="sex" />
+                        <label for="female-g">三层A瓦优质</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-h" name="sex" />
+                        <label for="female-h">三层A瓦优质</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-i" name="sex" />
+                        <label for="female-i">三层A瓦优质</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="female">
+                        <input type="radio" id="female-j" name="sex" />
+                        <label for="female-j">三层A瓦优质</label>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2 ml-auto">
+                    <div class="select">
+                        <select>
+                            <option value="volvo">查看详情</option>
+                            <option value="saab">不知火舞</option>
+                            <option value="mercedes">不知好歹</option>
+                            <option value="audi">不知死活</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row row-col">
+                <div class="col d-flex justify-content-center col-c">
+                    <div class="red-box">下一步</div>
+                </div>
+            </div>
+        </div>
+        <p class="interval"></p>
+        <div class="container-wrap">
+        <div class="container container-a">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <h6>51包装网-纸箱包装首选服务平台</h6>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div>
+                        <span>关于我们</span>
+                        <span>配送流程</span>
+                        <span>联系我们</span></div>
+                    <div><br>
+                    <span>下单指南</span>
+                    <span>媒体介绍</span></div>
+                </div>
+                <div class="col-lg-4 col-md-12 justify-content-end col-d">
+                    <div>
+                    <p>TEL：400-0000-000</p>
+                    <p>企业QQ：2870548696</p>
+                    <p>微信号：lubenwei123</p></div>
+                    <img src="img/e.png" height="100px">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-b">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <span>北京五一包装科技有限公司Coptright&nbsp;@2015&nbsp;&nbsp;&nbsp;&nbsp;
+                        51baozhuang.com&nbsp;&nbsp;All&nbsp;right&nbsp;right&nbsp;reserved.
+                        京icp备99999999-1</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</html>

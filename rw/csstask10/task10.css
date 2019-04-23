@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.background {
+    background:#1d7ad9;
+    height: 50px;
+    line-height: 50px;
+}
+.right {
+    color:#fff;
+    text-align: right;
+}
+.service {
+    color:#fff;
+}
+.landing{
+    display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid  #fff;
+}
+.register {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid  #fff;
+}
+@media screen and (max-width:440px){
+    .right {
+        display:none;
+    }
+}
+.landing:hover{
+    background-color: #fff;
+    padding: 0 20px;
+    color:#3d3d3d;
+}
+.register:hover{
+    background-color: #fff;
+    padding: 0 20px;
+    color:#3d3d3d;
+}
+/* 头部分 */
+.background-a {
+    background-color: #f8f9fa;
+}
+.padding {
+    padding: 10px 0;
+}
+.nav-link span {
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.quality {
+    padding-right: 0!important;
+}
+.nav-link span:hover {
+    background-color:#1d7ad9;
+    border: 1px solid #1d7ad9;
+    color:#fff;
+}
+.navbar-nav a {
+    text-align: center;
+}
+@media screen and (max-width:990px){
+    .nav-link span  {
+        width: 43em;
+    }
+}
+@media screen and (max-width:770px){
+    .nav-link span  {
+        width: 32em;
+    }
+}
+@media screen and (max-width:550px){
+    .nav-link span  {
+        width: 94vw;
+    }
+}
+@media screen and (max-width:320px){
+    .nav-link span  {
+        width: 90vw;
+        text-align: center;
+    }
+}
+/* 导航栏 */
+.rectangle {
+    background-color: #ccc;
+    height: 5px;
+    width: 50px;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+}
+.box {
+    display: flex;
+    align-items: center;
+}
+.box-wrap {
+    text-align: center;
+}
+.box-wrap p {
+    color:#ccc;
+}
+.box-wrap:hover .rectangle{
+    background-color: #ff7f02;
+}
+.box-wrap:hover .circle{
+    background-color: #ff7f02;
+}
+.box-wrap:hover p{
+    color: #ff7f02;
+}
+.col-top {
+    margin-top: 30px;
+}
+h5 {
+    margin-top: 15px;
+    border-left: 2px solid #1d7ad9;
+    padding-left: 10px;
+}
+/* 确认下单部分 */
+.col-img {
+    padding: 18px;
+    margin-left: 12px;
+    background-color:#f4f4f4 ;
+}
+.col-img span {
+    margin-left: 10px;
+    color:#1d7ad9;
+}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;
+    text-indent: .15em;
+    line-height: 1;
+}
+input[type="radio"]:checked + label::before {
+    border: 7px solid #1d7ad9;
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.row-col {
+    padding: 16px;
+    border: 1px solid #e8e8e8;
+    margin-left: -3px;
+}
+.female {
+    margin: 10px;
+    text-align: center;
+}
+.ml-auto {
+    line-height: 50px;
+}
+.select {
+    text-align: center;
+}
+select {
+    padding: 0px 30px;
+    background-image: url("img/d.png");
+    background-repeat: no-repeat;
+    background-position:97% 50%;
+    color: #ccc;
+    -webkit-appearance: none;
+}
+/* 选择箱型部分 */
+input {
+    width: 70px;
+    margin: 1px 10px;
+}
+.row-col-a {
+    padding: 16px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    margin-left: -3px;
+}
+.col-b .select {
+    position: absolute;
+    top: -7em;
+    right: 1em;
+}
+@media screen and (max-width:990px){
+    .col-b .select {
+        position: unset;
+    }
+}
+/* 确认尺寸部分 */
+.row-col-b label{
+    width: 120px;
+}
+.interval {
+    height: 20px;
+}
+/* main结束部分 */
+.col-c {
+    padding: 5em;
+}
+.red-box {
+    background: #e15053;
+    height: 5em;
+    width: 20em;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 5em;
+}
+.container-a {
+    padding: 50px 15px;
+}
+.container-wrap {
+    background: #f9f9f9;
+}
+@media screen and (min-width:990px){
+    .col-d {
+        display: flex;
+    }
+}
+.container-a h6:hover {
+    color:#1d7ad9;
+}
+.container-a span:hover {
+    color:#1d7ad9;
+}
+.container-a p:hover {
+    color:#1d7ad9;
+}
+.container-a h6{
+    color:#999;
+}
+.container-a span{
+    color:#999;
+}
+.container-a p{
+    color:#999;
+}
+.container-b {
+    background: #1d7ad9;
+    color: #fff;
+    text-align: center;
+}
