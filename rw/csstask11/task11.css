@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f4f7; }
+
+.header {
+  display: flex;
+  background: #1d7ad9;
+  height: 55px;
+  color: #fff;
+  align-items: center; }
+  .header img {
+    margin-left: 10px;
+    height: 40px;
+    width: 40px; }
+  .header .debark {
+    margin-left: 10px;
+    font-size: 20px; }
+
+.main {
+  display: flex;
+  background: #fff;
+  padding: 10px 0;
+  margin-top: 20px;
+  align-items: center; }
+  .main img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    padding-right: 30px;
+    border-right: 1px solid #f0f4f7; }
+  .main .input-box {
+    margin-left: 20px; }
+  .main input {
+    outline: none;
+    border: none; }
+
+.button-box {
+  background: #1d7ad9;
+  width: 96%;
+  margin-left: 2%;
+  padding: 12px 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center; }
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  color: #a5a6a7;
+  padding: 12px; }
+  .text div:hover {
+    color: #1d7ad9; }
+
+.group {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+  color: #a5a6a7; }
+  .group .left {
+    width: 20%;
+    height: 1px;
+    background: #a5a6a7; }
+  .group .third {
+    margin: 0 10px; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px; }
+  .logo div {
+    text-align: center; }
+    .logo div p {
+      color: #a5a6a7; }
+  .logo img {
+    width: 40px;
+    height: 40px; }
+  .logo .microblog {
+    margin: 0 20px; }
+
+/*# sourceMappingURL=task11.css.map */
