@@ -1,0 +1,103 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background:#f0f4f7;
+}
+$size:40px;
+$color:#a5a6a7;
+.header {
+  display: flex;
+  background: #1d7ad9;
+  height: 55px;
+  color:#fff;
+  align-items: center;
+  img {
+    margin-left: 10px;
+    height: $size;
+    width: $size;
+  }
+  .debark {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
+
+.main {
+  display: flex;
+  background: #fff;
+  padding: 10px 0;
+  margin-top: 20px;
+  align-items: center;
+  img {
+    height: $size;
+    width: $size;
+    margin-left: 10px;
+    padding-right: 30px;
+    border-right: 1px solid #f0f4f7;
+  }
+  .input-box {
+    margin-left: 20px;
+  }
+  input {
+    outline: none;
+    border: none;
+  }
+}
+
+.button-box {
+  background: #1d7ad9;
+  width: 96%;
+  margin-left: 2%;
+  padding: 12px 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  color:$color;
+  padding: 12px;
+  div:hover {
+    color:#1d7ad9;
+  }
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  margin-top: $size;
+  align-items: center;
+  color: $color;
+  .left {
+    width: 20%;
+    height: 1px;
+    background: $color;
+  }
+  .third {
+    margin: 0 10px;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+  div {
+    text-align: center;
+    p {
+      color: $color;
+    }
+  }
+  img {
+    width:$size;
+    height: $size;
+  }
+  .microblog {
+    margin: 0 20px;
+  }
+}
+
