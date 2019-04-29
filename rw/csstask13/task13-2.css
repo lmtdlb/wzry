@@ -1,0 +1,98 @@
+html {
+  background-color: #eff0f4; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #29bde0;
+  min-width: 320px;
+  max-width: 780px; }
+
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  color: #fff; }
+header .talk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b9e9f5;
+  padding: 0 30px;
+  background-image: url("img/d.png");
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+  height: 70px;
+  font-size: 18px; }
+  header .talk audio {
+    width: 110px;
+    height: 41px;
+    opacity: 0;
+    transform: scaleX(-1); }
+
+main .click {
+  padding-left: 40px;
+  margin-top: -4px; }
+  main .click p {
+    margin-bottom: 0px;
+    color: #ffffff; }
+main .box-wrap {
+  display: flex;
+  flex-direction: column; }
+  main .box-wrap .footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0; }
+    main .box-wrap .footer-wrap .picture .group {
+      display: flex;
+      flex-direction: column;
+      border: 5px solid #ffffff;
+      width: 16vw; }
+      main .box-wrap .footer-wrap .picture .group .text {
+        background-color: #f5c97b;
+        text-align: center;
+        height: 12vw;
+        line-height: 12vw; }
+      main .box-wrap .footer-wrap .picture .group .num {
+        background-color: #83b09a;
+        text-align: center;
+        height: 4vw;
+        line-height: 4vw;
+        color: #ffffff; }
+    main .box-wrap .footer-wrap .picture .sprite {
+      display: flex;
+      justify-content: space-between;
+      background: url(img/img.png) no-repeat;
+      background-size: 100%;
+      height: 55px;
+      margin: 10px 0;
+      opacity: 0; }
+    main .box-wrap .footer-wrap .group:hover ~ .sprite {
+      opacity: 1; }
+
+footer .below {
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  padding: 21px 0px;
+  min-width: 320px;
+  max-width: 780px;
+  background-color: #29bde0;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px; }
+  footer .below a {
+    color: #ffffff; }
+    footer .below a span {
+      background-color: #fbb435;
+      height: 50px;
+      line-height: 50px;
+      width: 80%;
+      display: inline-block; }
+
+/*# sourceMappingURL=task13-2.css.map */
