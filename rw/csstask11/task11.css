@@ -1,19 +1,21 @@
 body {
-  margin: 0;
   padding: 0;
-  background: #f0f4f7; }
+  background: #f0f4f7;
+  min-width: 320px;
+  max-width: 780px;
+  margin: 0 auto; }
 
-.header {
+header {
   display: flex;
   background: #1d7ad9;
   height: 55px;
   color: #fff;
   align-items: center; }
-  .header img {
+  header img {
     margin-left: 10px;
     height: 40px;
     width: 40px; }
-  .header .debark {
+  header .debark {
     margin-left: 10px;
     font-size: 20px; }
 

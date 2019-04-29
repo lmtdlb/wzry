@@ -1,0 +1,168 @@
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  max-width: 780px;
+}
+
+header {
+  div {
+    display: flex;
+    justify-content:space-between;
+    background: #1d7ad9;
+    align-items: center;
+    color: #fff;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    opacity: .8;
+    width: 100%;
+    min-width: 320px;
+    max-width: 780px;
+
+    span {
+      font-size: 30px;
+    }
+    img {
+      margin-left: 5%;
+    }
+    div {
+      margin-right: 5%;
+    }
+    .img-a {
+      opacity: 0;
+    }
+  }
+}
+
+main {
+  .person {
+    display: flex;
+    align-items: center;
+    background-image: url("img/c.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 0 50px 10px;
+    margin-top: 66px;
+    .img-d {
+      width: 114px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 26px;
+      color: #fff;
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .major {
+    margin-left: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #e1e5e7;
+    font-size: 20px;
+
+    span {
+      border-left: 2px solid  #1d7ad9;
+      padding-left: 11px;
+    }
+  }
+
+  .home {
+    display: flex;
+    margin-left: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #e1e5e7;
+    font-size: 20px;
+    .live {
+      padding-right: 20px;
+      border-right: 1px solid #e1e5e7;
+    }
+
+    .food {
+      margin-left: 20px;
+    }
+  }
+
+  .year {
+    @extend .home
+  }
+  .work {
+    color:#999;
+    @extend .live
+  }
+  .num {
+    @extend .food
+  }
+  .time {
+    @extend .home
+  }
+  .job {
+    color:#999;
+    @extend .live
+  }
+  .day {
+    @extend .food
+  }
+  .price {
+    @extend .home
+  }
+  .service {
+    color:#999;
+    @extend .live
+  }
+  .money {
+    color: #e26163;
+    @extend .food
+  }
+  .introduce {
+    @extend .home
+  }
+  .self{
+    color:#999;
+    min-width:104px;
+    @extend .live
+  }
+  .do {
+    @extend .food
+  }
+}
+
+footer {
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    position: fixed;
+    bottom: 0;
+    opacity: .8;
+    width: 100%;
+    min-width: 320px;
+    max-width: 780px;
+  }
+  .message {
+    margin-left: 5%;
+    width: 42%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #1d7ad9;
+    border-radius: 10px;
+    color:#1d7ad9;
+    font-size: 20px;
+  }
+  .relation {
+    margin-right: 5%;
+    width: 42%;
+    padding: 20px;
+    background-color: #1d7ad9;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 20px;
+  }
+}

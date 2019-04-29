@@ -1,0 +1,124 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  max-width: 780px;
+}
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: #29bde0;
+  color: #ffffff;
+  border-bottom: 1px solid #74d4eb;
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 770px;
+  margin: 0 auto;
+}
+main {
+  background-color:#29bde0 ;
+  .main-header {
+    text-align: center;
+    margin-top: 45px;
+    img {
+      width: 223px;
+      height: 120px;
+  }
+    .main-footer {
+      .main-text {
+        color: #ffffff;
+        margin: 0 auto;
+        width: 80%;
+
+        span {
+          display: block;
+        }
+
+        .main-text-span {
+          display: flex;
+          justify-content: space-between;
+          .other {
+            width: 71px;
+          }
+        }
+        .main-text-li {
+          color:#fbb435 ;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+footer {
+  .wrap {
+    border-bottom: 2px solid #dddddd;
+    .foot {
+      margin: 0 auto;
+      width: 80%;
+      .foot-one {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 40px;
+        .foot-one1 {
+          font-size: 20px;
+        }
+        .foot-one2 {
+          color:#dddddd ;
+        }
+      }
+      .foot-two {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+.under {
+  background-color:rgba(153,223,240,0.5);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  min-width: 320px;
+  max-width: 780px;
+  margin: 0 auto;
+  .under-left {
+    background-color: #f66f6f;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    a {
+      color: #ffffff;
+      text-decoration-line: none;
+    }
+  }
+  .under-right {
+    background-color: #fbb435;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+@mixin flex-box {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+header {
+  div {
+    @include flex-box;
+  }
+  span {
+    color:#29b078;
+  }
+}

@@ -1,0 +1,124 @@
+html {
+  background-color: #eff0f4;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #29bde0;
+  min-width: 320px;
+  max-width: 780px;
+}
+header {
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+  }
+  .talk {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #b9e9f5;
+    padding: 0 30px;
+    background-image: url("img/d.png");
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    height: 70px;
+    font-size: 18px;
+    audio {
+      width: 110px;
+      height: 41px;
+      opacity:0 ;
+      transform:scaleX(-1);
+    }
+  }
+}
+main {
+  .click {
+    padding-left: 40px;
+    margin-top: -4px;
+    p{
+      margin-bottom: 0px;
+      color: #ffffff;
+    }
+  }
+
+  .box-wrap {
+    display: flex;
+    flex-direction: column;
+
+    .footer-wrap {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+
+      .picture {
+        .group {
+          display: flex;
+          flex-direction: column;
+          border: 5px solid #ffffff;
+          width: 16vw;
+
+          .text {
+            background-color: #f5c97b;
+            text-align: center;
+            height: 12vw;
+            line-height: 12vw;
+          }
+
+          .num {
+            background-color: #83b09a;
+            text-align: center;
+            height: 4vw;
+            line-height: 4vw;
+            color: #ffffff;
+          }
+        }
+
+        .sprite {
+          display: flex;
+          justify-content: space-between;
+          background: url(img/img.png) no-repeat;
+          background-size: 100%;
+          height: 55px;
+          margin: 10px 0;
+          opacity: 0;
+        }
+      }
+      .group:hover ~ .sprite {
+        opacity: 1;
+      }
+    }
+  }
+}
+footer {
+  .below {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    padding: 21px 0px;
+    min-width: 320px;
+    max-width: 780px;
+    background-color: #29bde0;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    a{
+      color:#ffffff ;
+      span {
+        background-color: #fbb435;
+        height: 50px;
+        line-height: 50px;
+        width: 80%;
+        display: inline-block;
+      }
+    }
+  }
+}
+
