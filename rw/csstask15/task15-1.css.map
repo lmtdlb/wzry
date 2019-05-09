@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAOE,UAAI;EANJ,OAAO,EAAC,IAAI;EACZ,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;AAOnB,WAAK;EACH,KAAK,EAAC,OAAO",
-"sources": ["task15-1.scss"],
-"names": [],
-"file": "task15-1.css"
-}
