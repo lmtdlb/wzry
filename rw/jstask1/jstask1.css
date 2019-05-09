@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.box-wrap .box {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 30px;
+  background-color: orange;
+  margin: 1%;
+  float: left; }
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .button-wrap button {
+    width: 40%;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #1d7ad9; }
+
+/*# sourceMappingURL=jstask1.css.map */

@@ -1,0 +1,86 @@
+
+.viewport {
+  position: relative;
+  overflow: hidden;
+  .wrap {
+    position: relative;
+    width: 300vw;
+    overflow: hidden;
+    img {
+      display: inline-block;
+      width: 100vw;
+      height: auto;
+      float: left;
+    }
+  }
+  .page {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    label {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      margin: 2px;
+    }
+  }
+}
+
+input {
+  display: none;
+}
+#pic1:checked ~ .wrap {
+  left: 0;
+  transition: 1s;
+}
+#pic2:checked ~ .wrap {
+  left: -100vw;
+  transition: 1s;
+}
+#pic3:checked ~ .wrap {
+  left: -200vw;
+  transition: 1s;
+}
+
+.arrow label{
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(-135deg);
+}
+.other label{
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(45deg);
+}
+#pic1:checked ~ .arrow label:nth-of-type(3),
+#pic2:checked ~ .arrow label:nth-of-type(1),
+#pic3:checked ~ .arrow label:nth-of-type(2) {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+}
+#pic1:checked ~ .other label:nth-of-type(2),
+#pic2:checked ~ .other label:nth-of-type(3),
+#pic3:checked ~ .other label:nth-of-type(1) {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+}
+#pic1:checked ~ .page label:nth-of-type(1),
+#pic2:checked ~ .page label:nth-of-type(2),
+#pic3:checked ~ .page label:nth-of-type(3) {
+  background-image: url("../img/zz.png");
+  background-repeat: no-repeat;
+  border:unset;
+}
