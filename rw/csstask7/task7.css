@@ -67,12 +67,11 @@ body {
 }
 .foot-below {
     display: flex;
-    justify-content: space-between;
-    width: 10%;
-    margin: 0 auto;
+    justify-content: center;
     padding: 5px;
 }
 .box {
+    margin: 0 2px;
     background-color: #f0f0f0;
     border-radius: 50%;
     width: 10px;
