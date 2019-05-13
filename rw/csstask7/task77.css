@@ -27,18 +27,17 @@ body {
     align-items:center;
     background-color: #b9e9f5;
     padding: 0 30px;
-    background-image: url("img/d.png");
-    background-repeat: no-repeat;
-    background-position: 96% 50%;
     height: 70px;
     font-size: 18px;
     margin-top: 50px;
 }
 .bt-audio {
-    width: 110px;
-    height: 41px;
-    opacity:0 ;
-    transform:scaleX(-1);
+    position: absolute;
+    top: 82px;
+    right: 23px;
+    width: 111px;
+    transform: rotate(90deg);
+    opacity: 0;
 }
 .main-header {
     padding-left: 40px;
