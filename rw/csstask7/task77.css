@@ -4,15 +4,22 @@ body {
     background-color: #29bde0;
 }
 .header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #29bde0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
     color: #fff;
     font-size: 30px;
-    position: fixed;
-    top:0;
-    width: 100%;
+}
+.header img:nth-child(1){
+    margin-left: 15px;
+}
+.header img:nth-child(3){
+    margin-right: 15px;
 }
 .main {
     display: flex;
@@ -38,8 +45,8 @@ body {
     margin-top: -4px;
 }
 .main-header p{
-    margin-bottom: 0px;
-    color: #ffffff;
+    margin-bottom: 0;
+    color: #fff;
 }
 .footer {
     display: flex;
@@ -56,7 +63,7 @@ body {
 .foot-wrap-left {
     display: flex;
     flex-direction:column;
-    border: 5px solid #ffffff;
+    border: 2px solid #ffffff;
     width: 16vw;
 
 }

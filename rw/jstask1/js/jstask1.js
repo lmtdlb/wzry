@@ -22,8 +22,8 @@ function bbox() {
         myBox[i].style.backgroundColor = "orange";
     }
     myBox[sort()[1]].style.backgroundColor = colors();
-    myBox[sort()[2]].style.backgroundColor = colors();
-    myBox[sort()[3]].style.backgroundColor = colors();
+    myBox[sort()[1]].style.backgroundColor = colors();
+    myBox[sort()[1]].style.backgroundColor = colors();
 }//颜色随机分配
 function myfunction(){
     clearInterval(timer);
