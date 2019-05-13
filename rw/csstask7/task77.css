@@ -82,11 +82,9 @@ body {
 }
 
 .sprite {
-    display: flex;
-    justify-content: space-between;
     background:url(img/img.png)  no-repeat;
     background-size: 100%;
-    height: 83px;
+    height: 8vw;
     margin: 5px 0;
     opacity: 0;
 }
