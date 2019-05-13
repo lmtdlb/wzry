@@ -93,16 +93,15 @@ body {
 .below {
     position: fixed;
     bottom: 0;
-    width: 90%;
+    width: 100%;
     background-color: #29bde0;
-    margin: 0 5%;
     text-align: center;
     color: #ffffff;
     font-size: 28px;
     padding: 21px 0px;
 }
 .below a{
-    color:#ffffff ;
+    color:#fff;
 }
 .below-text {
     background-color: #fbb435;
