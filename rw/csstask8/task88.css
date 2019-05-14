@@ -37,6 +37,9 @@ body {
 .nav-item {
     text-align: center;
 }
+.navbar {
+    padding: 0;
+}
 .container-b {
     padding: 0;
 }
@@ -215,9 +218,6 @@ button:focus {
     padding-top: 15px;
     padding-left: 5px;
 }
-.row-x {
-    margin-top: 40px;
-}
 .item-m {
     display: none;
     font-size: 13px;
@@ -320,4 +320,10 @@ button:focus {
 }
 .skill:hover{
     text-decoration:underline;
+}
+.distance {
+    padding: 0;
+}
+.v-distance {
+    margin-top: 20px;
 }

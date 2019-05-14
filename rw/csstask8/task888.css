@@ -43,6 +43,9 @@ body {
 .container-wrap {
     background-color: #29b078;
 }
+.navbar {
+    padding: 0;
+}
 .nav-link {
     color: #fff!important;
     padding: 20px;
