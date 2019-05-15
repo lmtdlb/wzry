@@ -57,6 +57,9 @@ li .nav-link:hover {
 button:focus {
     outline: none;
 }
+#wipe {
+    padding: 0;
+}
 /* 导航栏部分 */
 .row-a {
     line-height: 50px;

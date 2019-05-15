@@ -7,6 +7,9 @@ body {
 .container-a {
     line-height: 50px;
 }
+#wipe {
+    padding: 0;
+}
 .service {
     color: #29b078;
     font-size: 18px;
@@ -42,9 +45,6 @@ body {
 .nav-item {
     text-align: center;
 }
-/*.container-b {
-    padding: 0;
-}*/
 .container-wrap {
     background-color: #29b078;
 }

@@ -30,6 +30,9 @@ body {
         display: none;
     }
 }
+#wipe {
+    padding: 0;
+}
 /* 最顶部分 */
 .bg-light {
      background-color: #29b078!important;
