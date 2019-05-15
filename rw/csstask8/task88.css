@@ -12,47 +12,40 @@ body {
     font-size: 18px;
 }
 .register {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    color: #29b078;
-    font-size: 18px;
-    height: 50px;
-    line-height: 50px;
+    display: none;
 }
 @media screen and (max-width: 960px){
-    .container-a{
+    .line{
         display: none;
     }
 }
-@media screen and (min-width: 960px){
+@media screen and (max-width: 960px){
     .register{
-        display: none;
+        display: block;
+        color: #29b078;
+        font-size: 18px;
+        line-height: 50px;
+        height: 50px;
+        text-align: end;
     }
-}
-#wipe {
-    padding: 0;
 }
 /* 最顶部分 */
+.navbar {
+    padding: 0!important;
+}
 .bg-light {
-     background-color: #29b078!important;
- }
+    background-color: #29b078!important;
+}
 .nav-item {
     text-align: center;
-}
-.navbar {
-    padding: 0;
-}
-.container-b {
-    padding: 0;
 }
 .container-wrap {
     background-color: #29b078;
 }
 .nav-link {
-    color: #fff!important;
     padding: 20px;
-    border-bottom: 2px solid #29b078;
+    color: #fff!important;
+    border-bottom:2px solid #29b078;
 }
 li .nav-link:hover {
     border-bottom: 2px solid #fff;

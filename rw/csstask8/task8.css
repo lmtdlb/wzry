@@ -15,24 +15,24 @@ body {
     font-size: 18px;
 }
 .register {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    color: #29b078;
-    font-size: 18px;
+    display: none;
 }
 @media screen and (max-width: 960px){
-    .container-a{
+    .line{
         display: none;
     }
 }
-.register {
-    line-height: 50px;
-    height: 50px;
-}
-@media screen and (min-width: 960px){
+@media screen and (max-width: 960px){
     .register{
-        display: none;
+        display: block;
+        color: #29b078;
+        font-size: 18px;
+        line-height: 50px;
+        height: 50px;
+        text-align: end;
+    }
+    .load {
+        padding: 0;
     }
 }
 /* 最顶部分 */
