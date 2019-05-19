@@ -19,11 +19,13 @@ header div {
   max-width: 780px; }
   header div span {
     font-size: 30px; }
-  header div img {
-    margin-left: 5%; }
+  header div .img-a {
+    margin-left: 10px; }
+  header div .img-b {
+    margin-right: 10px; }
   header div div {
     margin-right: 5%; }
-  header div .img-a {
+  header div .img-b {
     opacity: 0; }
 
 main .person {
@@ -72,7 +74,7 @@ main .money {
   color: #e26163; }
 main .self {
   color: #999;
-  min-width: 104px; }
+  min-width: 80px; }
 
 footer div {
   display: flex;

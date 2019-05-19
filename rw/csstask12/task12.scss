@@ -24,13 +24,16 @@ header {
     span {
       font-size: 30px;
     }
-    img {
-      margin-left: 5%;
+    .img-a {
+      margin-left: 10px;
+    }
+    .img-b {
+      margin-right: 10px;
     }
     div {
       margin-right: 5%;
     }
-    .img-a {
+    .img-b {
       opacity: 0;
     }
   }
@@ -125,7 +128,7 @@ main {
   }
   .self{
     color:#999;
-    min-width:104px;
+    min-width: 80px;
     @extend .live
   }
   .do {

@@ -139,12 +139,15 @@ footer {
     background-image: url("img/g.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     bottom: 0;
     width: 100%;
     min-width: 320px;
     max-width: 780px;
+    a {
+      text-decoration: none;
+    }
     .logo-left {
       display: flex;
       flex-direction: column;

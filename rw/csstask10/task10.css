@@ -91,6 +91,18 @@ body {
     height: 5px;
     width: 50px;
 }
+.set {
+    display: flex;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:960px){
+   .set{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
 .circle {
     width: 20px;
     height: 20px;
