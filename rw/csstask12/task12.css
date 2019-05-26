@@ -64,6 +64,8 @@ main .home, main .year, main .time, main .price, main .introduce {
     border-right: 1px solid #e1e5e7; }
   main .home .food, main .year .food, main .time .food, main .price .food, main .introduce .food, main .home .num, main .year .num, main .time .num, main .price .num, main .introduce .num, main .home .day, main .year .day, main .time .day, main .price .day, main .introduce .day, main .home .money, main .year .money, main .time .money, main .price .money, main .introduce .money, main .home .do, main .year .do, main .time .do, main .price .do, main .introduce .do {
     margin-left: 20px; }
+main .empty {
+  height: 85px; }
 main .work {
   color: #999; }
 main .job {

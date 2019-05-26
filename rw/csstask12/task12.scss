@@ -92,6 +92,10 @@ main {
     }
   }
 
+  .empty{
+    height: 85px;
+  }
+
   .year {
     @extend .home
   }
