@@ -1,8 +1,6 @@
 body {
   margin: 0 auto;
-  padding: 0;
-  min-width: 320px;
-  max-width: 780px; }
+  padding: 0; }
 
 header div {
   position: fixed;
@@ -16,8 +14,6 @@ header div {
   background-repeat: no-repeat;
   background-position: 84% 50%;
   background-size: 28px 28px;
-  min-width: 320px;
-  max-width: 780px;
   z-index: 1; }
   header div .boss {
     padding: 10px;
@@ -57,7 +53,7 @@ main .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   width: 33.25%;
   text-align: center; }
 main .dropdown-content a {
@@ -69,6 +65,8 @@ main .dropdown:hover .dropdown-content {
   display: block; }
 main .dropdown2:hover .dropdown-content {
   display: block; }
+main .empty {
+  height: 123px; }
 main .text {
   padding: 20px;
   border-bottom: 1px solid #dadcdd; }
@@ -115,9 +113,7 @@ footer .logo {
   height: 80px;
   position: fixed;
   bottom: 0;
-  width: 100%;
-  min-width: 320px;
-  max-width: 780px; }
+  width: 100%; }
   footer .logo a {
     text-decoration: none; }
   footer .logo .logo-left {
