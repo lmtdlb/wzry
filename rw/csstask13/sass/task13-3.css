@@ -59,6 +59,9 @@ footer .wrap {
     footer .wrap .foot .foot-two {
       margin: 10px 0; }
 
+.empty {
+  height: 66px; }
+
 .under {
   position: fixed;
   bottom: 0;
