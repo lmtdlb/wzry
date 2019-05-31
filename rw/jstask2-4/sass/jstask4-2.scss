@@ -6,6 +6,11 @@ body {
   max-width: 780px;
 }
 header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  max-width: 780px;
+  width: 100%;
   background-color: #1d7ad9;
   border-bottom: 1px solid #ddd;
   display: flex;
@@ -24,6 +29,7 @@ header {
   }
 }
 main {
+  margin-top: 56px;
   p {
     background-color: #fff;
     padding: 16px 0;
@@ -82,9 +88,16 @@ main {
   .vote{
     z-index: 1;
   }
+  .height{
+    height: 65px;
+    background-image: url("../img/p.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 }
 footer {
   position: fixed;
+  z-index: 2;
   bottom: 0;
   width: 100%;
   background-color: #1d7ad9;
