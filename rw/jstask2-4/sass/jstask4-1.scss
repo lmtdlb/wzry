@@ -1,8 +1,15 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px;
 }
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
   background-color: #1d7ad9;
   border-bottom: 1px solid #ddd;
   display: flex;
@@ -22,6 +29,7 @@ header {
 }
 main {
   background-color: #1d7ad9;
+  margin-top: 42px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -32,22 +40,28 @@ main {
     border: 2px solid #fff;
     .civilian {
       background-color: #f5c97b;
-      height: 21vw;
-      line-height: 21vw;
+      line-height: 12vh;
       text-align: center;
     }
-
     .num {
       background-color: #29b078;
-      height: 7vw;
-      line-height: 7vw;
+      line-height: 4vh;
       color: #fff;
       text-align: center;
     }
   }
 }
+.empty {
+  height: 77px;
+}
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
   text-align: center;
+  margin: 0 auto;
   background-color: #1d7ad9;
   button {
     width: 80%;
