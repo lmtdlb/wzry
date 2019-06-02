@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>配比页面</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../sass/jstask2.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../img/b.png">
+            <span>参数设置</span>
+            <img src="../img/a.png">
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <div class="player">
+                <span>玩</span>
+                <span>家</span>
+                <span>配</span>
+                <span>比</span>
+            </div>
+            <div class="choice-set">
+                <div class="choice">
+                    <span id="kill">杀&nbsp;&nbsp;手&nbsp;1&nbsp;人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平&nbsp;&nbsp;民&nbsp;3&nbsp;人</span>
+                </div>
+                <div class="set">
+                    <span>点击设置</span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="text" placeholder="水民词组">
+            <input type="text" placeholder="幽灵词组">
+        </div>
+        <div class="num">
+            <div class="num-1">
+                <span>玩家人数</span>
+                <input type="text" id="player" value="4" onblur="determine()" oninput = "value=value.replace(/[^\d]/g,'')" maxlength="2">
+                <span>人</span>
+            </div>
+            <div class="num-2">
+                <button class="add" id="btnSub" onclick="less()"></button>
+                <input id="slide" type="range" value="4" max="18" min="4" step="1" onchange="sliding_block()">
+                <button class="minus" id="btnAdd" onclick="plus()"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button onclick="wet()">去洗牌</button>
+    </footer>
+
+
+</body>
+<script src="../js/jstask2-1.js"></script>
+</html>

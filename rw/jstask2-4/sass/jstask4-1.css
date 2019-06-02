@@ -1,0 +1,69 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 780px;
+  min-width: 320px; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  background-color: #1d7ad9;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header :nth-child(1) {
+    margin-left: 15px;
+    transform: scale(0.7); }
+  header span {
+    color: #fff; }
+  header :nth-child(3) {
+    margin-right: 15px;
+    transform: scale(0.7); }
+
+main {
+  background-color: #1d7ad9;
+  margin-top: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1%; }
+  main .box {
+    width: 30%;
+    margin: 1%;
+    border: 2px solid #fff; }
+    main .box .civilian {
+      background-color: #f5c97b;
+      line-height: 12vh;
+      text-align: center; }
+    main .box .num {
+      background-color: #29b078;
+      line-height: 4vh;
+      color: #fff;
+      text-align: center; }
+
+.empty {
+  height: 18em;
+  background-color: #1d7ad9; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #1d7ad9; }
+  footer button {
+    width: 80%;
+    margin: 20px;
+    background-color: #ff7f02;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0; }
+
+/*# sourceMappingURL=jstask4-1.css.map */

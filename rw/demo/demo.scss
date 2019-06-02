@@ -1,0 +1,14 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+main {
+  :nth-child(1){
+    display: inline-block;
+    border: 1px solid #1d7ad9;
+  }
+  :nth-child(2){
+    display: inline-block;
+    border: 1px solid #ff7f02;
+  }
+}

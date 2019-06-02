@@ -1,0 +1,155 @@
+$color : #29bde0;
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: #efefef;
+  max-width: 780px;
+  min-width: 320px;
+}
+header {
+  div{
+    background-color: $color;
+    padding: 5px 5px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    span {
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+}
+main {
+  margin-top: 20px;
+  .wrap {
+    display: flex;
+  }
+  .player {
+    background-color: #fff;
+    padding: 50px 0;
+    width: 20%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    span {
+      font-size: 24px;
+    }
+  }
+  .choice-set {
+    width: 80%;
+    .choice {
+      margin-left: 1px;
+      background-color: #fbfbfb;
+      height: 150px;
+      line-height: 150px;
+      text-align: center;
+    }
+    .set {
+      margin-left: 1px;
+      margin-top: 1px;
+      background-color: #fbfbfb;
+      height: 73px;
+      line-height: 73px;
+      text-align: center;
+      span {
+        color:$color ;
+      }
+    }
+  }
+  .input-group {
+    margin-top: 20px;
+    height: 115px;
+    background-color: #fff;
+    text-align: center;
+    input {
+      border: none;
+      outline: none;
+      width: 90%;
+      height: 44px;
+      border-bottom: 3px solid #f0f0f0;
+    }
+  }
+  .num {
+    height: 96px;
+    margin-top: 20px;
+    background-color: #fff;
+    .num-1 {
+      padding-left: 5%;
+      padding-top: 10px;
+      input {
+        border: none;
+        outline: none;
+        width: 30px;
+        background-color: #f4f5f5;
+        color:#fab344;
+        font-size: 20px;
+      }
+    }
+    .num-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+
+      .add,
+      .minus {
+        height: 10px;
+        width: 10px;
+      }
+
+      #slide {
+        width: 60%;
+        outline: none; /*去掉点击时出现的外边框*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /*这三个是去掉那条线原有的默认样式，划重点！！*/
+        height: 7px;
+        border-radius: 5px;
+        background: #1cfdc1;
+        /*这三个是设置滑块下面那条线的样式*/
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        /*::-webkit-slider-thumb是代表给滑块的样式进行变更*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; /*//这三个是去掉滑块原有的默认样式，划重点！！*/
+        /*-webkit-box-shadow: 0 0 2px; *//*设置滑块的阴影*/
+        width: 20px;
+        height:20px;
+        background: url("../img/d.png");
+        background-size: cover;
+        /*//这几个是设置滑块的样式*/
+      }
+      .add {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: url("../img/e.png");
+        background-size: 100%;
+        width: 15px;
+        height: 15px;
+      }
+      .minus {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: url("../img/f.png");
+        background-size: 100%;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+footer {
+  margin-top: 20px;
+  button {
+    background-color:#fab344;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+  }
+}

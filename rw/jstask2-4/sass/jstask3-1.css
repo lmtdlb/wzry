@@ -1,0 +1,59 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  max-width: 780px; }
+
+header {
+  background-color: #29bde0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; }
+  header span {
+    color: #fff;
+    font-size: 24px; }
+  header :nth-child(1) {
+    margin-left: 10px;
+    transform: scale(0.7); }
+  header :nth-child(3) {
+    margin-right: 10px;
+    transform: scale(0.7); }
+
+main {
+  background-color: #29bde0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; }
+  main :nth-child(1) {
+    width: 275px;
+    height: 412px; }
+  main :nth-child(3) {
+    position: absolute;
+    top: 9em;
+    width: 137px;
+    height: 137px; }
+  main :nth-child(4) {
+    position: absolute;
+    top: 12em; }
+  main span {
+    position: absolute;
+    top: 6px;
+    color: #f56b81;
+    font-size: 25px; }
+
+footer {
+  background-color: #29bde0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  footer button {
+    width: 300px;
+    margin: 20px;
+    padding: 12px;
+    background-color: #fbb435;
+    color: #fff;
+    border: none; }
+
+/*# sourceMappingURL=jstask3-1.css.map */
