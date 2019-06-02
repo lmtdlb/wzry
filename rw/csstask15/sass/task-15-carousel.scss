@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 80%;
+    top: 75%;
     width: 100%;
     label {
       height: 20px;
@@ -47,18 +47,18 @@ input {
 
 .arrow label{
   display: none;
-  width: 2rem;
-  height: 2rem;
-  border-top: 5px solid #fff;
-  border-right: 5px solid #fff;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform: rotate(-135deg);
 }
 .other label{
   display: none;
-  width: 2rem;
-  height: 2rem;
-  border-top: 5px solid #fff;
-  border-right: 5px solid #fff;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform: rotate(45deg);
 }
 #pic1:checked ~ .arrow label:nth-of-type(3),

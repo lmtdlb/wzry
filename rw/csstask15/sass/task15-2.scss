@@ -1,16 +1,14 @@
-@mixin flex-box {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #fafafa;
 }
-
 header {
   //top-menu part
+  .col {
+    padding: 0 15px;
+  }
   .container-a {
     line-height: 50px;
   }
@@ -21,19 +19,16 @@ header {
   .register {
     display: flex;
     justify-content: flex-end;
-    padding-right: 20px;
     color: #29b078;
     font-size: 18px;
-    height: 50px;
-    line-height: 50px;
   }
   @media screen and (max-width: 960px){
-    .container-a{
-      display: none;
+    .col-z{
+      display: none!important;
     }
   }
   @media screen and (min-width: 960px){
-    .register{
+    .col-b{
       display: none;
     }
   }
@@ -42,7 +37,6 @@ header {
     background-color: #29b078;
   }
   .nav {
-    height: 72px;
     .img-4 {
       margin-top: 12px;
     }
@@ -57,19 +51,19 @@ header {
       background-color: #29b078;
       height: 0;
       li {
-
+        padding-left: 5px;
         a {
           display: block;
           color: white;
+          padding-left: 5px;
           text-align: center;
-          padding: 0 16px;
           text-decoration: none;
-          line-height: 67px;
-          border-bottom: 5px solid #29b078;
+          line-height: 64px;
+          border-bottom: 4px solid #29b078;
         }
       }
       li a:hover {
-        border-bottom: 5px solid #fff;
+        border-bottom: 4px solid #fff;
       }
     }
     @media screen and (min-width: 960px){
@@ -79,7 +73,7 @@ header {
       ul{
         display: inline-block;
         float: right;
-        height: 72px;
+        height: 67px;
       }
       li {
         float: right;
@@ -119,6 +113,7 @@ header {
 .size {
   font-size: 20px;
 }
+/* main第一部分 */
 .container-c {
   position: relative;
   display: grid;
@@ -258,9 +253,6 @@ header {
   padding-top: 15px;
   padding-left: 5px;
 }
-.row-x {
-  margin-top: 40px;
-}
 .item-m {
   display: none;
   font-size: 13px;
@@ -275,10 +267,10 @@ header {
 }
 
 @keyframes cartoon {
-  0%   {background: url("../img/q1.jpg")no-repeat center 100%;}
-  25%  {background: url("../img/q2.jpg")no-repeat center 100%;}
-  50%  {background: url("../img/q3.jpg")no-repeat center 100%;}
-  100% {background: url("../img/q4.jpg")no-repeat center 100%;}
+  0%   {background: url("../img/01.jpg")no-repeat center 100%;}
+  25%  {background: url("../img/02.jpg")no-repeat center 100%;}
+  50%  {background: url("../img/05.jpg")no-repeat center 100%;}
+  100% {background: url("../img/04.jpg")no-repeat center 100%;}
 
   0%{-webkit-transform:perspective(400px) rotateY(180deg);}
   100%{-webkit-transform:perspective(400px) rotateY(0deg);}
@@ -295,7 +287,7 @@ header {
   display: block!important;
 
 }
-
+/* main第二部分 */
 .container-wrap-a{
   background-color: #26a26f;
 }
@@ -363,4 +355,10 @@ header {
 }
 .skill:hover{
   text-decoration:underline;
+}
+.distance {
+  padding: 0;
+}
+.v-distance {
+  margin-top: 20px;
 }

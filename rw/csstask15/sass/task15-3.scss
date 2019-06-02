@@ -1,16 +1,14 @@
-@mixin flex-box {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #fafafa;
 }
-
 header {
   //top-menu part
+  .col {
+    padding: 0 15px;
+  }
   .container-a {
     line-height: 50px;
   }
@@ -21,19 +19,16 @@ header {
   .register {
     display: flex;
     justify-content: flex-end;
-    padding-right: 20px;
     color: #29b078;
     font-size: 18px;
-    height: 50px;
-    line-height: 50px;
   }
   @media screen and (max-width: 960px){
-    .container-a{
-      display: none;
+    .col-z{
+      display: none!important;
     }
   }
   @media screen and (min-width: 960px){
-    .register{
+    .col-b{
       display: none;
     }
   }
@@ -42,7 +37,6 @@ header {
     background-color: #29b078;
   }
   .nav {
-    height: 72px;
     .img-4 {
       margin-top: 12px;
     }
@@ -57,19 +51,19 @@ header {
       background-color: #29b078;
       height: 0;
       li {
-
+        padding-left: 5px;
         a {
           display: block;
           color: white;
+          padding-left: 5px;
           text-align: center;
-          padding: 0 16px;
           text-decoration: none;
-          line-height: 67px;
-          border-bottom: 5px solid #29b078;
+          line-height: 64px;
+          border-bottom: 4px solid #29b078;
         }
       }
       li a:hover {
-        border-bottom: 5px solid #fff;
+        border-bottom: 4px solid #fff;
       }
     }
     @media screen and (min-width: 960px){
@@ -79,7 +73,7 @@ header {
       ul{
         display: inline-block;
         float: right;
-        height: 72px;
+        height: 67px;
       }
       li {
         float: right;
@@ -99,6 +93,16 @@ header {
     }
   }
 }
+.row-a {
+  line-height: 50px;
+}
+.profession {
+  color:#29b078;
+}
+.img {
+  width: 100%;
+}
+/* header部分 */
 .partner{
   display: flex;
   justify-content: center;
@@ -143,10 +147,7 @@ header {
   color: #74c5a0;
 }
 
-
-.col-b {
-  background-color: #fff;
-}
+/* main左边部分 */
 .col-b img {
   margin-left: 20px;
 }
@@ -173,10 +174,6 @@ li:hover .main-left{
 @media (max-width: 980px){
   .col-b{
     text-align: center;
-    border: 1px solid #e6e6e6;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-
   }
 }
 @media (min-width: 980px){
@@ -189,7 +186,7 @@ li:hover .main-left{
     border-top-right-radius: 5px;
   }
 }
-
+/* main右边部分 */
 .container-wrap-a{
   background-color: #26a26f;
 }
@@ -255,6 +252,6 @@ li:hover .main-left{
 .we:hover{
   text-decoration:underline;
 }
-.skill:hover {
-  text-decoration: underline;
+.skill:hover{
+  text-decoration:underline;
 }

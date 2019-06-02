@@ -50,10 +50,11 @@ body {
     border-bottom: 2px solid #dddddd;
 }
 .foot {
-
     margin: 0 auto;
     width: 80%;
-
+}
+.empty {
+    height: 66px;
 }
 .foot-one {
     display: flex;
