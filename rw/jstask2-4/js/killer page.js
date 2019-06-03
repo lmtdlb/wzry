@@ -1,8 +1,8 @@
-var key = sessionStorage.getItem("key");//获取到浏览器中的值
-var array = key.split(",");//将字符串拆分为数组
+var key = sessionStorage.getItem("key");
+var array = key.split(",");
 var player = JSON.parse(sessionStorage.getItem("player"));
 var b = parseInt(sessionStorage.getItem("b"));
-var peopleCounting = JSON.parse(sessionStorage.getItem("people"));
+var peopleCounting = JSON.parse(sessionStorage.getItem("people"));//存值取值
 var a;
 for(i = 1;i <= array.length;i++) {
     $("#wrap").append(`
@@ -12,7 +12,7 @@ for(i = 1;i <= array.length;i++) {
                     <div class="img"></div>
              </div>
         `);
-}
+}//遍历渲染
 
 function box() {
     $(".box").children(".live").css('background','#f5c97b');
@@ -23,7 +23,7 @@ if(b == 1){
     $("#killer").html("杀手杀人");
     $(".box").click(function() {
         if(array[$(this).index()] == "杀手"){
-            alert("不能杀自己人，请选择其他人！！");
+            alert("不能杀自己人，请选择其他人！！");//设置杀手不能杀自己人
         }
         else {
             $(this).children('.img').css('opacity','1');
@@ -43,7 +43,7 @@ else {
 function start() {
         for (x = 1; x <= peopleCounting.length; x++) {
             peopleCounting[x - 1].push({num: a + 1, identity: array[a]})
-        }
+        }//向数组中存入死亡的人
         if (b == 2) {
             peopleCounting.push([]);
         }

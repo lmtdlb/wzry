@@ -1,7 +1,7 @@
 var peopleCounting = JSON.parse(sessionStorage.getItem("people"));
 var key = sessionStorage.getItem("key");
 var array = key.split(",");
-var player = JSON.parse(sessionStorage.getItem("player"));
+var player = JSON.parse(sessionStorage.getItem("player"));//存值取值
 var x = 0;
 var y = 0;
 window.onload = function() {
@@ -12,7 +12,7 @@ window.onload = function() {
         if((player[i-1].name == "平民") && (player[i-1].state == "live")){
             y++;
         }
-    }
+    }//获取平民和杀手的人数
     for (i = 1; i < peopleCounting.length; i++) {
         $(".day-num").append(` 
             <p>第${i}天</p>
@@ -31,3 +31,6 @@ window.onload = function() {
         <p>杀&nbsp;&nbsp;手${x}人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平&nbsp;&nbsp;民${y}人</p>
     `);
 }
+$("button").click(function () {
+    window.location.href="start page.html";
+})

@@ -22,7 +22,7 @@ for(i = 1;i <= array.length;i++) {
  if(y == 0 || x == y){
      alert("杀手胜利");
      window.location.href="end page.html";
- }
+ }//判断胜利条件
 
 
 window.onload = function() {
@@ -30,7 +30,7 @@ window.onload = function() {
         $(this).next().toggle();
         $(this).next().next().toggle();
     });
-};
+};//点击隐藏显现
 
 for(i = 1;i <= peopleCounting.length;i++) {
     $("main").append(`
@@ -63,7 +63,7 @@ for(i = 1;i <= peopleCounting.length;i++) {
             <div class="empty"><span class="writ writ${i}"></span></div>
         </div>
         <div class="height"></div>
-        `);
+        `);//遍历添加内容
 
     if (c == 1) {
         $(".killer").css("background-color", "#191970");
@@ -84,7 +84,7 @@ for(i = 1;i <= peopleCounting.length;i++) {
     `);
     $(".writ" + i).append(`
         ${peopleCounting[i - 1][1].num}号被投死，真实身份是${peopleCounting[i - 1][1].identity}
-    `);
+    `);//渲染死掉的人
 }
 
 function ghost() {

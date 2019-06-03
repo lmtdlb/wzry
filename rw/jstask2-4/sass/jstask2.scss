@@ -1,4 +1,4 @@
-$color : #29bde0;
+$color : #29bde0;//颜色变量
 body {
   margin: 0 auto;
   padding: 0;
@@ -16,6 +16,10 @@ header {
     span {
       color: #fff;
       font-size: 24px;
+    }
+    :nth-child(1),
+    :nth-child(3){
+      transform: scale(.7);
     }
   }
 }
