@@ -46,7 +46,7 @@ main {
       text-align: center; }
 
 .empty {
-  height: 18em;
+  height: 100vh;
   background-color: #1d7ad9; }
 
 footer {

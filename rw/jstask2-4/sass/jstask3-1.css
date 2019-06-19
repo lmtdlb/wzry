@@ -23,10 +23,12 @@ header {
 main {
   background-color: #29bde0;
   position: relative;
+  height: 100vh;
   display: flex;
   justify-content: center;
   margin: 0 auto; }
   main :nth-child(1) {
+    margin: 14px 0;
     width: 275px;
     height: 412px; }
   main :nth-child(3) {
@@ -39,11 +41,15 @@ main {
     top: 12em; }
   main span {
     position: absolute;
-    top: 6px;
+    top: 20px;
     color: #f56b81;
     font-size: 25px; }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 780px;
   background-color: #29bde0;
   margin: 0 auto;
   display: flex;

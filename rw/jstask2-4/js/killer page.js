@@ -18,7 +18,10 @@ function box() {
     $(".box").children(".live").css('background','#f5c97b');
     $(".box").children('.img').css('opacity','0');
 }
-$(".box").children(".death").css('background','#F0F0F0');
+$(".death").click(function() {
+    alert("此人已死，找它请烧纸")
+});
+$(".death").css('background', '#F0F0F0');
 if(b == 1){
     $("#killer").html("杀手杀人");
     $(".box").click(function() {

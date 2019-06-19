@@ -1,0 +1,132 @@
+<div id="page-wrapper" class="page-wrapper">
+    <!-- uiView: undefined --><ui-view class="ng-scope"><div class="panel panel-default ng-scope">
+    <form class="form-horizontal ng-pristine ng-valid">
+        <div class="panel-body">
+            <div class="row pd-bottom-2">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label col-md-4">发布时间</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control ng-pristine ng-valid ng-touched" size="20" bs-datepicker="" autoclose="true" data-date-format="yyyy-MM-dd" data-date-type="number" data-max-date="" ng-model="vm.searchParams.startAt">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label col-md-4 text-center ">—</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control ng-pristine ng-valid ng-touched" size="20" bs-datepicker="" autoclose="true" data-date-format="yyyy-MM-dd" data-date-type="number" ng-model="vm.searchParams.endAt" data-min-date="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label col-md-4 word-spacing-25">类 型</label>
+                        <div class="col-md-8">
+                            <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="vm.searchParams.type">
+                                <option value="">全部</option>
+                                <option value="0">首页Banner</option>
+                                <option value="1">找职位Banner</option>
+                                <option value="2">找精英Banner</option>
+                                <option value="3">行业大图</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pd-bottom-2">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label col-md-4 word-spacing-25">状 态</label>
+                        <div class="col-md-8">
+                            <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="vm.searchParams.status">
+                                <option value="">全部</option>
+                                <option value="2">上线</option>
+                                <option value="1">草稿</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pd-bottom-2">
+                <div class="col-md-4 pull-right text-right">
+                    <div params="vm.searchParams" class="ng-isolate-scope">
+                        <button type="button" class="btn btn-danger" ng-click="clean()">清空</button>
+                        <button type="button" class="btn btn-success" ng-click="search()">搜索</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+    <div class="panel panel-default ng-scope">
+        <div class="panel-heading">
+            <strong>Article列表</strong>
+            <button type="button" class="btn btn-xs btn-success pull-right margin-left-10" ui-sref="field.articleDetail" href="#/articleDetail">
+                +新增
+            </button>
+            <!--<button type="button" class="btn btn-xs btn-danger pull-right" ng-click="vm.saveSort()" ng-show="vm.searchParams.type=='0'||vm.searchParams.type=='1'||vm.searchParams.type=='2'">保存排序</button>-->
+        </div>
+        <div class="panel-body table-responsive">
+            <table class="table table-striped add-table-border">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>类型</th>
+                    <th>发布时间</th>
+                    <th>修改时间</th>
+                    <th>发布者</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <!-- ngIf: vm.total --><ul class="pagination pull-right ng-scope ng-isolate-scope" ng-if="vm.total" total="68">
+        <style>
+            .pagination>li>a[disabled],
+            .pagination>li>a[disabled]:hover {
+                cursor: not-allowed;
+            }
+        </style>
+        <li class="pull-left paginationCenter">
+            每页显示
+            <input type="text" class="paginationGo text-center ng-pristine ng-untouched ng-valid" ng-model="size" ng-change="changeSize()">
+            条
+        </li>
+
+        <li><a ng-disabled="isDisabled(1)" ng-click="goPage(1)" disabled="disabled">首页</a></li>
+        <li><!-- ngIf: isHavePrePage() --></li>
+
+        <!-- ngRepeat: li in pageList track by $index --><li ng-repeat="li in pageList track by $index" ng-class="{'active': isActive(li)}" class="ng-scope active">
+        <a ng-disabled="isDisabled(li)" ng-click="goPage(li)" class="ng-binding" disabled="disabled"> 1 </a>
+    </li><!-- end ngRepeat: li in pageList track by $index --><li ng-repeat="li in pageList track by $index" ng-class="{'active': isActive(li)}" class="ng-scope">
+        <a ng-disabled="isDisabled(li)" ng-click="goPage(li)" class="ng-binding"> 2 </a>
+    </li><!-- end ngRepeat: li in pageList track by $index --><li ng-repeat="li in pageList track by $index" ng-class="{'active': isActive(li)}" class="ng-scope">
+        <a ng-disabled="isDisabled(li)" ng-click="goPage(li)" class="ng-binding"> 3 </a>
+    </li><!-- end ngRepeat: li in pageList track by $index --><li ng-repeat="li in pageList track by $index" ng-class="{'active': isActive(li)}" class="ng-scope">
+        <a ng-disabled="isDisabled(li)" ng-click="goPage(li)" class="ng-binding"> 4 </a>
+    </li><!-- end ngRepeat: li in pageList track by $index --><li ng-repeat="li in pageList track by $index" ng-class="{'active': isActive(li)}" class="ng-scope">
+        <a ng-disabled="isDisabled(li)" ng-click="goPage(li)" class="ng-binding"> 5 </a>
+    </li><!-- end ngRepeat: li in pageList track by $index --><li ng-repeat="li in pageList track by $index" ng-class="{'active': isActive(li)}" class="ng-scope">
+        <a ng-disabled="isDisabled(li)" ng-click="goPage(li)" class="ng-binding" disabled="disabled"> ... </a>
+    </li><!-- end ngRepeat: li in pageList track by $index -->
+
+        <li><!-- ngIf: isHaveNextPage() --><a ng-if="isHaveNextPage()" ng-click="goPage(activePage + 1)" class="ng-scope"> &gt; </a><!-- end ngIf: isHaveNextPage() --></li>
+        <li><a ng-disabled="isDisabled(totalPage)" ng-click="goPage(totalPage)">末页</a></li>
+        <li>
+            去第
+            <input type="text" class="paginationGo text-center ng-pristine ng-untouched ng-valid" ng-model="jumpPage" ng-change="changeInput()">
+            页
+            <a class="pull-right" style="border-radius:0" ng-click="goPage(jumpPage)">确定</a>
+        </li>
+    </ul><!-- end ngIf: vm.total -->
+    </div>
+</ui-view>
+</div>
+
+

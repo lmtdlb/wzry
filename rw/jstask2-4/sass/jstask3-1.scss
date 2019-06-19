@@ -27,10 +27,12 @@ header {
 main {
   background-color:$color;
   position: relative;
+  height: 100vh;
   display: flex;
   justify-content: center;
   margin:0 auto;
   :nth-child(1) {
+    margin: 14px 0;
     width: 275px;
     height: 412px;
   }
@@ -46,12 +48,16 @@ main {
   }
   span {
     position: absolute;
-    top: 6px;
+    top: 20px;
     color: #f56b81;
     font-size: 25px;
   }
 }
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 780px;
   background-color:$color;
   margin: 0 auto;
   display: flex;

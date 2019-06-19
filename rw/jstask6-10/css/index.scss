@@ -1,0 +1,22 @@
+.simple{
+  margin: 0;
+  padding: 0;
+  background:url("../img/a.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form{
+  p{
+    text-align: center;
+  }
+  .submit {
+    width: 150px;
+    border-radius: 5px;
+    background-color: #1b91ff;
+    border: 1px solid #1b91ff;
+    outline: none;
+  }
+}

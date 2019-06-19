@@ -1,0 +1,178 @@
+.manage {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-wrapper {
+  background-color: #f5f5f5;
+}
+
+.navbar-top-links {
+  margin-right: 0;
+}
+
+.navbar-top-links li {
+  display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+  margin-right: 15px;
+}
+
+.navbar-top-links li a {
+  padding: 15px;
+  min-height: 50px;
+}
+.navbar-top-links .dropdown .dropdown-character,
+.navbar-top-links .dropdown .dropdown-name,
+.navbar-top-links .dropdown .dropdown-close {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.navbar-top-links .dropdown .vertical {
+  color: #e8e8e8;
+}
+
+/*.navbar-top-links .dropdown .dropdown-close {*/
+/*color: #feb454;*/
+/*}*/
+
+.sidebar .sidebar-nav.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.sidebar .fa {
+  padding: 0 10px;
+}
+
+.sidebar .fa.arrow {
+  float: right;
+  padding-right: 40px;
+
+}
+
+.sidebar .fa.arrow:before {
+  content: "\f104";
+}
+
+.sidebar .active > a > .fa.arrow:before {
+  content: "\f107";
+}
+
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+  border-bottom: 0 !important;
+}
+
+.sidebar .nav-second-level li a {
+  padding-left: 67px;
+  font-size: 14px;
+
+}
+
+.sidebar .nav-third-level li a {
+  padding-left: 52px;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    float: left;
+    width: 250px;
+    padding-top: 28px;
+    padding-bottom: 3000px;
+    margin-bottom: -3000px;
+  }
+}
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 46px 0;
+  text-align: center;
+}
+
+.login-panel {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+.login-circle-img {
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  margin-top: -38px;
+  box-shadow: 0 -3px 7px rgba(160, 160, 160, 0.5);
+}
+.login-user-icon {
+  background: url("/images/SBAdmin/loginuser.png") 0 0;
+  width: 22px;
+  height: 25px;
+  position: absolute;
+  top: 96px;
+  left: 46px;
+}
+
+.login-user:focus + .login-user-icon {
+  background: url("/images/SBAdmin/loginuser-active.png") 0 0;
+}
+
+.login-psd-icon {
+  background: url("/images/SBAdmin/loginpsd.png") 0 0;
+  width: 23px;
+  height: 26px;
+  position: absolute;
+  top: 156px;
+  left: 46px;
+}
+
+.login-psd:focus + .login-psd-icon {
+  background: url("/images/SBAdmin/loginpsd-active.png") 0 0;
+}
+
+.topbar-content {
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px #e3e2e2;
+  border-color: #e3e2e2;
+}
+.topbar {
+  border: none;
+}
+.navbar-toggle-button {
+  border: 1px solid white;
+}
+
+.navbar-toggle-button span {
+  background-color: white;
+}
+.sidebar ul li a {
+  color: white;
+  font-size: 16px;
+  border-left: solid transparent;
+  padding-left: 10px;
+}
+.skinChangeBtn {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  z-index: 999;
+  font-size: 25px;
+  color: white;
+  background-color: rgba(185,185,185,0.5);
+  border: none;
+  padding: 0 11px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.modal-title {
+  border-bottom: none;
+  color: #47c6e8;
+  font-size: 16px;
+}
+.panel-default p:hover {
+  background-color: #ddd;
+}

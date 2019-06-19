@@ -1,0 +1,37 @@
+body {
+  margin:0;
+  padding:0;
+  background: url("img/a.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: #ddd;
+  text-align: center;
+  opacity: .8;
+  p{
+    color: #1b91ff;
+  }
+  div{
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 8px;
+    input{
+      outline: none;
+      border: none;
+      border-left: 1px solid #ddd;
+      padding-left: 5px;
+    }
+  }
+  button{
+    width: 194px;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: #1b91ff;
+    border: 1px solid #1b91ff;
+    outline: none;
+  }
+}
