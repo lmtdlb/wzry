@@ -13,18 +13,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5px;
   border-bottom: 1px solid #ddd; }
   header :nth-child(1) {
     transform: scale(0.4); }
   header :nth-child(3) {
+    transform: scale(0.4);
     opacity: 0; }
   header span {
     color: #fff; }
 
 main {
   margin-top: 43px;
-  height: 40em;
+  height: 100vh;
   text-align: center;
   background-color: #1d7ad9; }
   main img {

@@ -20,6 +20,7 @@ header div {
     transform: scale(0.7); }
 
 main {
+  height: 100vh;
   margin-top: 20px; }
   main .wrap {
     display: flex; }
@@ -127,6 +128,9 @@ main {
 footer {
   margin-top: 20px; }
   footer button {
+    position: fixed;
+    bottom: 0;
+    max-width: 780px;
     background-color: #fab344;
     color: #fff;
     width: 100%;

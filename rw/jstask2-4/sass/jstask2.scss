@@ -24,6 +24,7 @@ header {
   }
 }
 main {
+  height: 100vh;
   margin-top: 20px;
   .wrap {
     display: flex;
@@ -149,6 +150,9 @@ main {
 footer {
   margin-top: 20px;
   button {
+    position: fixed;
+    bottom: 0;
+    max-width: 780px;
     background-color:#fab344;
     color: #fff;
     width: 100%;
