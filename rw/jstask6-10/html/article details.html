@@ -1,14 +1,128 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>article详情页</title>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<div id="page-wrapper" class="page-wrapper" ng-controller="AppControllers">
+    <div class="panel panel-default ng-scope">
+        <div class="panel-heading">
+            <strong class="ng-scope" ng-model="text">{{text}}</strong>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal ng-pristine ng-invalid ng-invalid-required" name="myform">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">标题名称</label>
+                    <div class="col-md-8">
+                        <input class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" type="text" ng-model="title" required="">
+                    </div>
+                </div>
 
-</head>
-<body>
+                <div class="form-group">
+                    <label class="col-md-2 control-label word-spacing-25">类 型</label>
+                    <div class="col-md-2">
+                        <select class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" ng-model="type" required="">
+                            <option value="">请选择</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
 
-</body>
-</html>
+                    <div class="col-md-2">
+                        <select class="form-control ng-pristine ng-untouched ng-valid ng-scope ng-valid-required" ng-model="industry" ng-if="type == 3" required="">
+                            <option value="">请选择</option>
+                            <option value="0">移动互联网</option>
+                            <option value="1">电子商务</option>
+                            <option value="2">企业服务</option>
+                            <option value="3">020</option>
+                            <option value="4">教育</option>
+                            <option value="5">金融</option>
+                            <option value="6">游戏</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label word-spacing-25">说 明</label>
+                    <div class="col-md-8">
+                        <div id="editor" style="height:360px" ng-model="content">
+                            <script type="text/javascript" charset="utf-8">
+                                UE.delEditor('editor');
+                                UE.getEditor('editor');
+                            </script>
+                        </div>
+                        <input class="form-control ng-pristine ng-untouched ng-valid" type="text" ng-model="content">
+                    </div>
+                </div>
+                <div class="form-group ng-scope">
+                    <label class="col-md-2 control-label">跳转链接</label>
+                    <div class="col-md-8">
+                        <input class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" type="text" ng-model="url" required="">
+                    </div>
+                </div>
+
+                <div class="col-md-12" style="margin-bottom: 40px">
+                    <div class="col-md-12 ">
+                        <label class="btn btn-primary" for="file2">选择文件</label>
+                        <input id="file2" style="display: none" type="file" nv-file-select="" uploader="uploader">
+                    </div>
+                    <div class="col-md-12">
+                        <img alt="配图预览" class="img-responsive" ng-src="{{pic}}" ng-model="img">
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="50%">名称</th>
+                                <th>尺寸</th>
+                                <th>进展</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in uploader.queue" class="ng-scope">
+                            <td>
+                                <div ng-show="uploader.isHTML5" ng-thumb="{ file: item._file, height: 100 }" class=""></div>
+                            </td>
+                            <td>0.54 MB</td>
+                            <td>
+                                <div class="progress" style="margin-bottom: 0;">
+                                    <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }" style="width: 100%;"></div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <span ng-show="item.isSuccess" class=""><i class="glyphicon glyphicon-ok"></i></span>
+                                <span ng-show="item.isCancel" class="ng-hide"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                                <span ng-show="item.isError" class="ng-hide"><i class="glyphicon glyphicon-remove"></i></span>
+                            </td>
+                            <td nowrap="">
+                                <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess" disabled="disabled">
+                                    <span class="glyphicon glyphicon-upload"></span>上传
+                               </button>
+                                <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading" disabled="disabled">
+                                    <span class="glyphicon glyphicon-ban-circle"></span>取消
+                                </button>
+                                <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                                    <span class="glyphicon glyphicon-trash"></span>去掉
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div>
+                        <div>队列进度：
+                            <div class="progress" style="">
+                                <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <button type="button" class="btn btn-success" ng-click="pubArticle()"  ng-disabled="!myform.$valid||pic==undefined" disabled="disabled">立即上线 </button>
+                        <button type="button" class="btn btn-success" ng-click="saveArticle()" ng-disabled="!myform.$valid||pic==undefined" disabled="disabled">存为草稿</button>
+                        <button type="button" class="btn btn-default pull-right" ui-sref="background page.list" href="#/list//">取消</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

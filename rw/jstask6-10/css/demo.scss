@@ -1,0 +1,29 @@
+.content-top {
+  .panel {
+    background-color: transparent;
+    box-shadow:none;
+  }
+
+  .panel-default>.panel-heading {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .panel-default {
+    border-color: transparent;
+    border-bottom: transparent;
+  }
+  .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: none;
+  }
+  a:focus, a:hover {
+    //color: #23527c;
+    text-decoration: none;
+  }
+  .color{
+    color: #fff;
+    font-weight: bolder;
+  }
+
+}

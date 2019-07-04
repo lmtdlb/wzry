@@ -4,19 +4,17 @@
         <p><br>
             <input type="text" name="name" ng-model="name" placeholder="请输入账号" required
                    ng-minlength="4" ng-maxlength="10">
-            <div><span ng-show="myForm.name.$dirty && myForm.name.$invalid"></span></div>
-            <!--<div><span style="color:red" ng-show="myForm.name.$error.required">用户名是必须的</span></div>-->
-            <div style="color:red" ng-show="myForm.name.$error.minlength">输入长度不能小于4</div>
-            <div style="color:red" ng-show="myForm.name.$error.maxlength">输入长度不能大于10</div>
+        <div><span ng-show="myForm.name.$dirty && myForm.name.$invalid"></span></div>
+        <div style="color:red" ng-show="myForm.name.$error.minlength">输入长度不能小于4</div>
+        <div style="color:red" ng-show="myForm.name.$error.maxlength">输入长度不能大于10</div>
         </p>
 
         <p><br>
             <input type="password" name="pwd" ng-model="pwd" placeholder="请输入密码" required
                    ng-minlength="6" ng-maxlength="10">
-            <div><span ng-show="myForm.pwd.$dirty && myForm.pwd.$invalid"></span></div>
-            <!--<div><span style="color:red" ng-show="myForm.pwd.$error.required">密码是必须的</span></div>-->
-            <div style="color:red" ng-if="myForm.pwd.$error.minlength">输入长度不能小于6</div>
-            <div style="color:red" ng-if="myForm.pwd.$error.maxlength">输入长度不能大于10</div>
+        <div><span ng-show="myForm.pwd.$dirty && myForm.pwd.$invalid"></span></div>
+        <div style="color:red" ng-if="myForm.pwd.$error.minlength">输入长度不能小于6</div>
+        <div style="color:red" ng-if="myForm.pwd.$error.maxlength">输入长度不能大于10</div>
         </p>
 
         <p style="color:red">{{ text }}</p>

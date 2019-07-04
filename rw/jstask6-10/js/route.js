@@ -1,4 +1,4 @@
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider,) {
     $urlRouterProvider.otherwise("/start");
     $stateProvider
         .state('/', {
@@ -13,8 +13,21 @@ app.config(function($stateProvider, $urlRouterProvider) {
                  $state.go('list')
              }*/
         })
+
+        .state('background page.welcome', {
+            url: '/welcome',
+            templateUrl: "html/welcome.html",
+        })
+
+        .state('background page.details', {
+            url: '/details',
+            templateUrl: "html/article details.html",
+            params:{id:null}
+        })
+
         .state('background page.list', {
             url: '/list',
-            templateUrl: 'html/article list.html'
+            templateUrl: "html/article list.html",
+            params:{page:null}
         })
 });
